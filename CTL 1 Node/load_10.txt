@@ -1,0 +1,24 @@
+java -cp /usr/local/ycsb/ycsb-0.4.0/cassandra-binding/conf:/usr/local/ycsb/ycsb-0.4.0/conf:/usr/local/ycsb/ycsb-0.4.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb/ycsb-0.4.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb/ycsb-0.4.0/lib/core-0.4.0.jar:/usr/local/ycsb/ycsb-0.4.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/httpclient-4.0.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/antlr-runtime-3.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/libthrift-0.7.0.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jbcrypt-0.3m.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/snaptree-0.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/slf4j-api-1.6.4.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/httpcore-4.0.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/antlr-3.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/avro-1.4.0-cassandra-1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/json-simple-1.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/concurrentlinkedhashmap-lru-1.3.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/metrics-core-2.0.3.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jackson-core-asl-1.9.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/commons-codec-1.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/high-scale-lib-1.1.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jamm-0.2.5.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jackson-mapper-asl-1.9.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/lz4-1.1.0.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/antlr-2.7.7.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/log4j-1.2.16.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/cassandra-all-1.2.9.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/commons-logging-1.1.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/commons-cli-1.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/servlet-api-2.5.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jline-1.0.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/snappy-java-1.0.5.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/stringtemplate-3.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/cassandra-binding-0.4.0.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/cassandra-thrift-1.2.9.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/snakeyaml-1.6.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/compress-lzf-0.8.4.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/guava-13.0.1.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jetty-util-6.1.22.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/servlet-api-2.5-20081211.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/jetty-6.1.22.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/slf4j-log4j12-1.7.2.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/cassandra-driver-core-1.0.3.jar:/usr/local/ycsb/ycsb-0.4.0/cassandra-binding/lib/netty-3.5.9.Final.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test10 -p hosts=10.122.68.14 -threads 10 -p columnfamily=data -s -load
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test10 -p hosts=10.122.68.14 -threads 10 -p columnfamily=data -s -load
+Loading workload...
+Starting test.
+2015-11-13 22:33:08:189 0 sec: 0 operations; est completion in 0 seconds 
+2015-11-13 22:33:18:135 10 sec: 84111 operations; 8411.1 current ops/sec; est completion in 16 seconds [INSERT: Count=84116, Max=142463, Min=224, Avg=1176.09, 90=1772, 99=6855, 99.9=71423, 99.99=136575] 
+2015-11-13 22:33:28:135 20 sec: 176879 operations; 9276.8 current ops/sec; est completion in 5 seconds [INSERT: Count=92765, Max=1097727, Min=216, Avg=1074.98, 90=1386, 99=5575, 99.9=66047, 99.99=1095679] 
+2015-11-13 22:33:32:079 23 sec: 214748 operations; 9599.24 current ops/sec; [CLEANUP: Count=10, Max=153, Min=48, Avg=63.4, 90=63, 99=153, 99.9=153, 99.99=153] [INSERT: Count=37867, Max=86591, Min=218, Avg=795.29, 90=1021, 99=4559, 99.9=19855, 99.99=86207] 
+[OVERALL], RunTime(ms), 23949.0
+[OVERALL], Throughput(ops/sec), 8966.887970270158
+[CLEANUP], Operations, 10.0
+[CLEANUP], AverageLatency(us), 63.4
+[CLEANUP], MinLatency(us), 48.0
+[CLEANUP], MaxLatency(us), 153.0
+[CLEANUP], 95thPercentileLatency(us), 153.0
+[CLEANUP], 99thPercentileLatency(us), 153.0
+[INSERT], Operations, 214748.0
+[INSERT], AverageLatency(us), 1065.2660467152198
+[INSERT], MinLatency(us), 216.0
+[INSERT], MaxLatency(us), 1097727.0
+[INSERT], 95thPercentileLatency(us), 2157.0
+[INSERT], 99thPercentileLatency(us), 6123.0
+[INSERT], Return=0, 214748
