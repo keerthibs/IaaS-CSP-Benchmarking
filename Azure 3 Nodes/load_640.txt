@@ -1,0 +1,15 @@
+﻿ Throughput(ops/sec), 150.2015359746918
+[CLEANUP], Operations, 640.0
+[CLEANUP], AverageLatency(us), 17517.7359375
+[CLEANUP], MinLatency(us), 8.0
+[CLEANUP], MaxLatency(us), 1639423.0
+[CLEANUP], 95thPercentileLatency(us), 9663.0
+[CLEANUP], 99thPercentileLatency(us), 651775.0
+[INSERT], Operations, 606254.0
+[INSERT], AverageLatency(us), 524281.1921438869
+[INSERT], MinLatency(us), 203.0
+[INSERT], MaxLatency(us), 2.117074943E9
+[INSERT], 95thPercentileLatency(us), 3387391.0
+[INSERT], 99thPercentileLatency(us), 5988351.0
+[INSERT], Return=0, 606214
+[INSERT], Return=-1, 640
